@@ -2,11 +2,12 @@
 const nextConfig = {
     output: "export",
     images: {
-      unoptimized: true, // Fixes image loading issue on GH Pages
+      unoptimized: true, // Required for GitHub Pages
     },
-    basePath: "/Portfolio", // Change this to your repo name
-    assetPrefix: "/Portfolio/", // Change this to your repo name
+    basePath: "/Portfolio", // Your GitHub repo name
+    assetPrefix: "/Portfolio",
   };
   
-  export default nextConfig;
+  module.exports = nextConfig;
+  
   
